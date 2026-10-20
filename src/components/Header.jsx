@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Header = () => {
   return (
     <header className="flex justify-between items-center px-[5%] bg-[#735945]">
@@ -5,16 +7,16 @@ const Header = () => {
       <nav>
         <ul className='flex list-none items-center gap-8' >
           <li>
-            <a href="#" className='text-white text-lg no-underline hover:text-[#fffaf1] hover:no-underline transition-all'>Inicio</a>
+            <Link to="/" className='text-white text-lg no-underline hover:text-[#fffaf1] hover:no-underline transition-all'>Inicio</Link>
           </li>
           <li>
-            <a href="/produtos" className='text-white text-lg no-underline hover:text-[#fffaf1] hover:no-underline transition-all'>Cardápio</a>
+            <Link to="/cardapio" className='text-white text-lg no-underline hover:text-[#fffaf1] hover:no-underline transition-all'>Cardápio</Link>
           </li>
           <li>
-            <a href="/contatos" className='text-white text-lg no-underline hover:text-[#fffaf1] hover:no-underline transition-all'>Contatos</a>
+            <Link to="/contato" className='text-white text-lg no-underline hover:text-[#fffaf1] hover:no-underline transition-all'>Contato</Link>
           </li>
           <li>
-            <a href="/sobre" className='text-white text-lg no-underline hover:text-[#fffaf1] hover:no-underline transition-all'>Sobre</a>
+            <Link to="/sobre" className='text-white text-lg no-underline hover:text-[#fffaf1] hover:no-underline transition-all'>Sobre</Link>
           </li>
         </ul>
       </nav>
