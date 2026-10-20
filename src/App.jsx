@@ -1,9 +1,10 @@
+import Cardapio from "./pages/Cardapio"
 
 
 const App = () => {
   return (
     <div>
-      <Footer/> 
+      <Cardapio/>
     </div>
   )
 }
